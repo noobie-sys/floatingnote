@@ -1,0 +1,104 @@
+@import 'tailwindcss';
+@import '@radix-ui/themes/styles.css';
+
+@plugin '@tailwindcss/typography';
+
+/* Satoshi Regular */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./Fonts/Satoshi-Regular.eot');
+  src:
+    url('./Fonts/Satoshi-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./Fonts/Satoshi-Regular.woff2') format('woff2'),
+    url('./Fonts/Satoshi-Regular.woff') format('woff'),
+    url('./Fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Satoshi Medium */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./Fonts/Satoshi-Medium.eot');
+  src:
+    url('./Fonts/Satoshi-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./Fonts/Satoshi-Medium.woff2') format('woff2'),
+    url('./Fonts/Satoshi-Medium.woff') format('woff'),
+    url('./Fonts/Satoshi-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Satoshi Bold */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./Fonts/Satoshi-Bold.eot');
+  src:
+    url('./Fonts/Satoshi-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./Fonts/Satoshi-Bold.woff2') format('woff2'),
+    url('./Fonts/Satoshi-Bold.woff') format('woff'),
+    url('./Fonts/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Satoshi Black */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./Fonts/Satoshi-Black.eot');
+  src:
+    url('./Fonts/Satoshi-Black.eot?#iefix') format('embedded-opentype'),
+    url('./Fonts/Satoshi-Black.woff2') format('woff2'),
+    url('./Fonts/Satoshi-Black.woff') format('woff'),
+    url('./Fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  #root {
+    @apply h-full;
+  }
+
+  html,
+  body {
+    @apply h-full;
+
+    @apply select-none;
+
+    @apply bg-transparent;
+
+    @apply antialiased text-white;
+
+    @apply overflow-hidden;
+
+    font-family: 'Satoshi', sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#555] rounded-md;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+}
+
+.ProseMirror-focused {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.ProseMirror {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}

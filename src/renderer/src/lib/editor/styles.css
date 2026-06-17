@@ -1,0 +1,71 @@
+@import 'highlight.js/styles/github-dark.css';
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Text selection styles */
+.ProseMirror ::selection {
+  background-color: #fbcfe8 !important;
+  color: #000000 !important;
+}
+
+.ProseMirror ::-moz-selection {
+  background-color: #fbcfe8 !important;
+  color: #000000 !important;
+}
+
+/* Highlight styles */
+.ProseMirror mark {
+  border-radius: 0.2em;
+  padding: 0.1em 0.2em;
+  font-weight: 500; /* Slightly bolder text for better readability */
+}
+
+/* Specific highlight color styles with matching text colors */
+.ProseMirror mark[style*='background-color: #FEF08A'] {
+  background-color: #fef08a !important;
+  color: #854d0e !important; /* Dark yellow text */
+  opacity: 0.8;
+}
+
+.ProseMirror mark[style*='background-color: #BBF7D0'] {
+  background-color: #bbf7d0 !important;
+  color: #166534 !important; /* Dark green text */
+  opacity: 0.8;
+}
+
+.ProseMirror mark[style*='background-color: #BFDBFE'] {
+  background-color: #bfdbfe !important;
+  color: #1e40af !important; /* Dark blue text */
+  opacity: 0.8;
+}
+
+.ProseMirror mark[style*='background-color: #FBCFE8'] {
+  background-color: #fbcfe8 !important;
+  color: #9d174d !important; /* Dark pink text */
+  opacity: 0.8;
+}
+
+.ProseMirror mark[style*='background-color: #E9D5FF'] {
+  background-color: #e9d5ff !important;
+  color: #6b21a8 !important; /* Dark purple text */
+  opacity: 0.8;
+}
+
+/* Subscript and Superscript styles */
+.ProseMirror .subscript {
+  vertical-align: sub;
+  font-size: 0.8em;
+  color: #e5e7eb;
+}
+
+.ProseMirror .superscript {
+  vertical-align: super;
+  font-size: 0.8em;
+  color: #e5e7eb;
+}
